@@ -17,7 +17,17 @@ export default defineNuxtConfig({
 			],
 			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 		},
+		pageTransition: { name: 'page', mode: 'out-in' },
+		layoutTransition: {
+			name: 'slide',
+			mode: 'out-in',
+		},
 	},
 
-	modules: ['@nuxtjs/tailwindcss'],
+	modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
+	googleFonts: {
+		families: {
+			Roboto: true,
+		},
+	},
 });
