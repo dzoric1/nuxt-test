@@ -34,9 +34,14 @@ const helpLinks = [
 
 		<h1 class="questions-title">Часто задаваемые вопросы</h1>
 		<div class="questions-blocks">
-			<a v-for="(block, i) in blocks" :key="i" href="/" class="questions-block">
+			<NuxtLink
+				v-for="(block, i) in blocks"
+				:key="i"
+				href="/"
+				class="questions-block"
+			>
 				<div class="questions-block__name">{{ block }}</div>
-			</a>
+			</NuxtLink>
 		</div>
 		<div class="questions-help">
 			<div class="questions-title">Справка</div>
@@ -46,7 +51,7 @@ const helpLinks = [
 					:key="i"
 					class="questions-help__link"
 				>
-					<a href="/">{{ link }}</a>
+					<NuxtLink href="/">{{ link }}</NuxtLink>
 				</div>
 			</div>
 		</div>

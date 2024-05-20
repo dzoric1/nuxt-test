@@ -1,7 +1,10 @@
 <script setup></script>
 
 <template>
-	<NuxtLink to="/faq">Часто задаваемые вопросы</NuxtLink>
+	<div class="flex flex-col">
+		<NuxtLink to="/faq">Часто задаваемые вопросы</NuxtLink>
+		<NuxtLink to="/cart">Корзина</NuxtLink>
+	</div>
 </template>
 
 <style scoped></style>
