@@ -329,4 +329,148 @@ const breadcrumbs = [
 	</div>
 </template>
 
-<style></style>
+<style>
+.basket-wrapp {
+	@apply flex gap-x-20;
+}
+.basket-column {
+	@apply flex-[0_1_820px];
+}
+.basket-column__head {
+	@apply flex justify-between items-start max-w-[820px];
+}
+.basket-column__title {
+	@apply text-2xl font-medium text-[$text-primary] flex items-start gap-x-1;
+}
+.basket-column__title span {
+	@apply text-[#858585] text-sm not-italic font-normal leading-[135%];
+}
+.basket-column__reset {
+	@apply text-sm text-[$text-thirdly] cursor-pointer;
+}
+.basket-column__items {
+	@apply pt-6;
+}
+.basket-column__empty {
+	@apply text-center max-w-[460px] mx-auto my-0 pt-20;
+}
+.basket-column__empty__title {
+	@apply text-[#0c0c0d] text-[26px] font-medium leading-[120%] pb-3;
+}
+.basket-column__empty__subtitle {
+	@apply text-[#0c0c0d] text-lg font-normal leading-[135%] pb-5;
+}
+.basket-column__empty__subtitle a {
+	@apply text-[#f3223c] no-underline;
+}
+.basket-column__empty__link {
+	@apply inline-block text-white font-medium text-base px-[84px] py-[15px] rounded-[10px];
+	background: #f3223c;
+}
+.basket-item__wrapp-mobile {
+	@apply hidden;
+}
+.basket-item {
+	@apply px-0 py-6 border-b-[#ebebeb] border-b border-solid first:pt-0 last:pb-0 last:border-b-[none];
+}
+.basket-item__wrapp {
+	@apply flex;
+}
+.basket-item__img {
+	@apply w-[90px] h-[90px] no-underline text-[$text-primary] rounded-lg;
+}
+.basket-item__desc {
+	@apply max-w-[310px] pl-4;
+}
+.basket-item__desc__name {
+	@apply text-sm leading-[1.2] no-underline text-[$text-primary] block pb-2;
+}
+.basket-item__desc .card__attr {
+	@apply static;
+}
+.basket-item__desc__wrapp {
+	@apply text-xs text-[#858585] pt-3.5;
+}
+.basket-item__quantity {
+	@apply self-center pl-[50px] pr-3 py-0;
+}
+.basket-item__favorite {
+	@apply self-center cursor-pointer;
+}
+.basket-item__favorite img {
+	@apply border px-3.5 py-[15px] rounded-[10px] border-solid border-[#d1d1d1];
+}
+.basket-item__price {
+	@apply self-center text-base font-medium whitespace-nowrap pl-[55px];
+}
+.basket-item__price__old {
+	@apply line-through text-sm text-[$text-thirdly] font-normal text-right pb-1;
+}
+.basket-item__del {
+	@apply self-center cursor-pointer ml-auto;
+}
+.basket-fixed {
+	@apply hidden;
+}
+.basket-info {
+	@apply flex-[0_1_320px];
+}
+.basket-info__deliverys {
+	@apply flex flex-col gap-y-3 pt-6;
+}
+.basket-info__delivery {
+	@apply flex gap-x-2 items-center;
+}
+.basket-info__delivery span {
+	@apply text-[$text-thirdly] text-base;
+}
+.basket-info__free {
+	@apply flex items-center gap-x-2.5 w-full box-border mb-4 px-4 py-[11px] rounded-[10px];
+	background: rgba(243, 34, 60, 0.1);
+}
+.basket-info__change {
+	@apply underline text-sm text-[$accent-red] cursor-pointer pt-5;
+}
+.basket-info__list {
+	@apply pt-[30px] pb-0 px-0;
+}
+.basket-info__list li {
+	@apply flex justify-between pb-5 last:pb-0;
+}
+.basket-info__list__item {
+	@apply text-base;
+}
+.basket-info__list__item-red {
+	@apply text-[$accent-red];
+}
+.basket-info__total {
+	@apply flex justify-between items-end pb-4;
+}
+.basket-info__total__text {
+	@apply text-lg font-medium;
+}
+.basket-info__total__price {
+	@apply text-2xl font-medium;
+}
+.basket-info__btn {
+	@apply w-full text-white bg-[#F3223C] text-base cursor-pointer inline-block text-center no-underline px-0 py-[15px] rounded-[10px] border-[none];
+}
+.basket-adds {
+	@apply pt-20;
+}
+.basket-slider {
+	@apply relative max-w-[820px];
+}
+.basket-slider .card {
+	@apply w-60 h-[417px];
+}
+.basket-slider .card__photos__wrapper {
+	@apply w-60 h-60;
+}
+.basket-slider .card__name {
+	@apply text-sm;
+}
+.basket-slider .gallery__item {
+	@apply h-[190px];
+}
+</style>
