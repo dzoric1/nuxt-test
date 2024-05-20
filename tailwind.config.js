@@ -8,11 +8,11 @@ module.exports = {
 			center: true,
 		},
 		screens: {
-			xs: '450px',
-			sm: '640px',
-			md: '768px',
-			lg: '1024px',
-			xl: '1220px',
+			xs: { max: '450px' },
+			sm: { max: '640px' },
+			md: { max: '768px' },
+			lg: { max: '1024px' },
+			xl: { max: '1220px' },
 		},
 		extend: {
 			colors: {
